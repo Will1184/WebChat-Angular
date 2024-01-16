@@ -1,0 +1,37 @@
+.principal{
+  width: 900px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+.message,.inputMessage-container{
+  display: flex;
+  flex-direction: row;
+}
+.message.right{
+  justify-content: flex-end;
+  justify-content: flex-end;
+}
+
+.message.left{
+  justify-content: flex-start;
+}
+.listMessage{
+  display: flex;
+  flex-direction: column;
+}
+.message-wrap{
+  margin-left: 10px;
+  background: #b182ff;
+  border-radius: 10px;
+  height: max-content;
+}
+.message-wrap > .message{
+  margin: 10px;
+  font-size: 0.7em;
+}
+.p-inputtext-lg{
+  border-radius: 10px;
+  margin-right: 10px;
+  width: 100%
+}
