@@ -1,0 +1,30 @@
+<div class="principal">
+  <p-panel styleClass="panel1">
+    <div class="message-container">
+      <ul class="listMessage">
+        <li class="message right" *ngFor="let item of messageList"
+        [ngClass]="{'left': item.messages_side === 'receiver', 'right': item.messages_side === 'sender'}"
+        >
+          <p-avatar label="P" class="avatar" size="large"></p-avatar>
+          <div class="message-wrap">
+            <p class="message">
+              {{item.message}}
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="inputMessage-container">
+      <input
+        type="text"
+        class="p-inputtext-lg"
+        value=""
+        placeholder="Type a message"
+        [(ngModel)]="messageInput"
+      />
+      <div class="p-toolbar-group-end">
+        <p-button (click)="sendMessage()" label="Send" icon="pi pi-check" ></p-button>
+      </div>
+    </div>
+  </p-panel>
+</div>
