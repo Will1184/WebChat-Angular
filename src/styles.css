@@ -1,1 +1,21 @@
-/* You can add global styles to this file, and also import other style files */
+@import "primeng/resources/themes/lara-light-blue/theme.css";
+@import "primeng/resources/primeng.css";
+:root{
+  --electric-violet-50: #f5f2ff;
+  --electric-violet-100: #efe7ff;
+  --electric-violet-200: #e0d3ff;
+  --electric-violet-300: #caafff;
+  --electric-violet-400: #b182ff;
+  --electric-violet-500: #9a50ff;
+  --electric-violet-600: #8f2cfb;
+  --electric-violet-700: #8521e8;
+  --electric-violet-800: #6b15c2;
+  --electric-violet-900: #5a139f;
+  --electric-violet-950: #37096c;
+}
+.p-panel .p-panel-header{
+  background: var(--electric-violet-700) !important;
+  border-color: var(--electric-violet-700) !important;
+}
+
+
